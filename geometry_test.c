@@ -21,11 +21,11 @@ START_TEST(test_2d_area_triangle)
     a.x=0; a.y=0; b.x=0;b.y=0; c.x=0; c.y=0; 
     ck_assert(coord_2d_area_triangle(&a,&b,&c)==0);
     
-    a.x=0;a.y=0;b.x=5;b.y=0;c.x=5;c.y=5;
-    ck_assert(coord_2d_area_triangle(&a,&b,&c)==12.5);
+    a.x=15;a.y=15;b.x=23;b.y=30;c.x=50;c.y=25;
+    ck_assert(coord_2d_area_triangle(&a,&b,&c)==222.50);
 }
+END_TEST
 
-/* coord_2d_eq Test */
 START_TEST(test_2d_eq)
 {
     coord_2d_t a;
